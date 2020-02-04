@@ -5,10 +5,9 @@ class Recipe < ApplicationRecord
 
   accepts_nested_attributes_for :recipe_ingredients
 
-  def recipe_ingredients_attributes=(ingredient_ids)
-    byebug
-    # ingredient_ids.values.each do |ingredient_id|
-    #   RecipeIngredient.create(recipe_id: self.id, ingredient_id: ingredient_id)
-    # end
-  end
+  # def recipe_ingredients_attributes=(ingredient_ids)
+  #   # ingredient_ids.values.each do |ingredient_id|
+  #   #   RecipeIngredient.create(recipe_id: self.id, ingredient_id: ingredient_id)
+  #   # end
+  # end
 end

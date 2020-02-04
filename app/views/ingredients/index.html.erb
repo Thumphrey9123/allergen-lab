@@ -1,0 +1,8 @@
+<h1>Ingredients</h1>
+
+<% @ingredients.each do |ingredients|%>
+    <p>
+        <%= link_to ingredients.ingredient_name, ingredients%>
+        <%= ingredients.allergies.count%>
+    </p>
+<%end%>

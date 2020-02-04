@@ -14,12 +14,13 @@ class RecipesController < ApplicationController
     end
 
     def create
-        byebug
+        # byebug #for recipe_ingredient_params
         @recipe = Recipe.create(recipe_params)
         # @recipe = Recipe.create(recipe_params(:title, :user_id))
         # recipe_params(:ingredients)[:ingredients].map do |ingredient|
         #     ingredient.create_recipe(@recipe, ingredient)
         # end
+        redirect_to recipes_path
     end
 
     private
@@ -29,7 +30,7 @@ class RecipesController < ApplicationController
     end
 
     def recipe_ingredient_params
-        # params.require(:recipe).require(:recipe_ingredients_attributes)permit()
+        # params.require(:recipe).require(:recipe_ingredients_attributes).permit()
     end
     
 end

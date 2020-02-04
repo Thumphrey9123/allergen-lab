@@ -7,10 +7,10 @@
     <%= f.label :user_id %>
     <%= f.collection_select :user_id, @users, :id, :user_name %>
 
-    <%= f.fields_for :recipe_ingredients do |ingredient_form|%>
-        <%= ingredient_form.label :ingredient_id %>
-        <%= ingredient_form.collection_select :ingredient_id, Ingredient.all, :id, :ingredient_name %>
-    <%end%>
+    <%# f.fields_for :recipe_ingredients do |ingredient_form|%>
+        <%# ingredient_form.label :ingredient_id %>
+        <%# ingredient_form.collection_select :ingredient_id, Ingredient.all, :id, :ingredient_name %>
+    <%#end%>
 
     <%= f.submit%>
 <% end %>
